@@ -3,7 +3,7 @@
 <head>
   <title>Nombre Tienda</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -17,13 +17,13 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-inverse" role="navigation">
+<header>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <!-- El logotipo y el icono que despliega el menú se agrupan
        para mostrarlos mejor en los dispositivos móviles -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target=".navbar-ex1-collapse">
+            data-target="#navegacion-TM">
       <span class="sr-only">Desplegar navegación</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -34,7 +34,7 @@
 
   <!-- Agrupar los enlaces de navegación, los formularios y cualquier
        otro elemento que se pueda ocultar al minimizar la barra -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  <div class="collapse navbar-collapse navbar-ex1-collapse" id="navegacion-TM">
   <div class="container-fluid">
     <div class="navbar-header">
 
@@ -52,18 +52,20 @@
               <li> <a href="#">Contactanos </a></li>
 
     </ul>
-	<form class="navbar-form navbar-left" role="search">
+	<form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Buscar">
       </div>
-      <button type="submit" class="btn btn-default">Enviar</button>
+      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></button>
     </form>
   </div>
 </nav>
+</header>
+
 
 <div class="row">
     <div class="col-lg-8">
-<img  src="https://i.imgur.com/NtglCbZ.png"> <!-- cambiarlo a 920 * 150 -->
+<img  src="https://i.imgur.com/NtglCbZ.png" class="img-responsive" alt="Imagen responsive"> <!-- cambiarlo a 920 * 150 -->
     </div>
  <div class="col-lg-4">
 <div class="container" style="padding-top: 1em;">
@@ -144,11 +146,11 @@
 <footer>
 
       <p>
-					<div class="container">
+
 						<div class="navbar-inverse navbar-collapse collapse" id="footer-body">
 							<ul class="nav navbar-nav" style="list-style-type: none;">
 								<li><a href="">&copy; Empresa</a></li>
-								<li><a href="mailto:nombreempresa@gmail.com">Nuestro Correo</a></li>
+								<li><a href="mailto:nombreempresa@gmail.com">Mandanos un correo</a></li>
 								<li><a href="">Tel: 00-00-00-00</a></li>
                 <li><a href="">Sucursal: Monterrey, Nuevo Leon, Av. Gonzalitos</a></li>
                 <li><a href="#" id="link_facebook" class="tooltip_trigger" title="facebook" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/facebook.jpg' alt=''  />	</a></li>
@@ -157,10 +159,9 @@
 						   	<li><a href="#" id="link_youtube" class="tooltip_trigger" title="youtube" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/youtube.jpg' alt=''  />		</a></li>
 							</ul>
 						</div>
-				</div>
+
 
 			</footer>
-
 
 
 
