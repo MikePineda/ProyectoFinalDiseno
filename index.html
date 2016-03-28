@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
+
+
+/* Boton para ir arriba */
     #IrArriba {
 position: fixed;
 bottom: 30px; /* Distancia desde abajo */
@@ -20,7 +23,7 @@ height: 60px; /* Alto del botón */
 display: block;
 background: url(imagenes/perroapuntando.png) no-repeat center center;
 }
-
+/* Carousel */
   div      { text-align: center; }
 
   .carousel-inner > .item > img,
@@ -32,67 +35,56 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
 </head>
 
 <body STYLE="background-color:white">
-<header>
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <!-- El logotipo y el icono que despliega el menú se agrupan
-       para mostrarlos mejor en los dispositivos móviles -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target="#navegacion-TM">
-      <span class="sr-only">Desplegar navegación</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Nombre Empresa</a>
-  </div>
-
-  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-       otro elemento que se pueda ocultar al minimizar la barra -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse" id="navegacion-TM">
-  <div class="container-fluid">
+  <header>
+   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+         para mostrarlos mejor en los dispositivos móviles-->
     <div class="navbar-header">
-
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#navegacion-TM">
+        <span class="sr-only">Desplegar navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nombre Empresa</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li> <a href="perros.html">Perros</a></li>
-              <li> <a href="gatos.html">Gatos </a></li>
-              <li> <a href="peces.html"> Peces</a></li>
-              <li> <a href="roedores.html">Roedores </a></li>
-              <li> <a href="aves.html">Aves</a></li>
-              <li> <a href="servicios.html"> Servicios</a></li>
-              <li> <a href="opinion.html"> Danos tu opinión</a></li>
-              <li> <a href="promociones.html">Promociones </a></li>
-              <li> <a href="contacto.html">Contactanos </a></li>
 
-    </ul>
-	<!--<form class="navbar-form navbar-right" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Buscar">
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+         otro elemento que se pueda ocultar al minimizar la barra -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse" id="navegacion-TM">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
       </div>
-      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></button>
-    </form>
-  </div> -->
-</nav>
-</header>
-
-
-<div class="row"> <!--Logo de la empresa y boton para inciar sesion -->
-    <div class="col-lg-8">
-<img  src="https://i.imgur.com/NtglCbZ.png" class="img-responsive" alt="Imagen responsive">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li> <a href="perros.html">Perros</a></li>
+                <li> <a href="gatos.html">Gatos </a></li>
+                <li> <a href="peces.html"> Peces</a></li>
+                <li> <a href="roedores.html">Roedores </a></li>
+                <li> <a href="aves.html">Aves</a></li>
+                <li> <a href="servicios.html"> Servicios</a></li>
+                <li> <a href="opinion.html"> Danos tu opinión</a></li>
+                <li> <a href="promociones.html">Promociones </a></li>
+                <li> <a href="contacto.html">Contactanos </a></li>
+                <li> <a href="#login-box" class="login-window"><span class="glyphicon glyphicon-user"></span> Inicia sesión </a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>  <span class="badge">0</span></a></li>
+      </ul>
     </div>
- <div class="col-lg-4">
-<div class="container" style="padding-top: 1em;">
-  <div class="well" style="max-width: 400px; margin: 2 auto 10px;background-color:lightblue">
-    <a href="#" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-user"></span> Inicia Sesión </a>
-    <a href="#" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Mis compras</a>
   </div>
-</div>
-</div>
-</div>
+  </nav>
+  </header>
 
-<div class="container"> <!-- Carousel con lo mas vendido! -->
+
+
+  <p align="center"><img src="https://i.imgur.com/NtglCbZ.png" class="img-responsive" alt="Imagen responsive"><p>
+
+
+
+
+<!-- Carousel con lo mas vendido! -->
+<div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -151,9 +143,8 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
     </a>
   </div>
 </div>
+
 <!--Ofertas -->
-
-
  <div class="jumbotron" STYLE="background-color:white">
 
 <h1 class="text-center"> Promociones de este mes</h1>
@@ -161,20 +152,20 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
   <div class="row">
     <div class="col-md-4">
       <a href="http://i.imgur.com/WbmESnw.jpg" class="thumbnail">
-        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" class="img-responsive" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
       <a href="http://i.imgur.com/4xmf0Ri.jpg" class="thumbnail">
-        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" class="img-responsive" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
       <a href="http://i.imgur.com/sF06XJj.jpg" class="thumbnail">
-        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+        <img src="http://jarccleaningservices.com/wp-content/uploads/2015/07/ofertas-del-mes.jpg" class="img-responsive" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
       </a>
     </div>
-<a href="#"><p class="text-center"><button class="btn btn-success btn-lg"> ¡Haz click aquí para ver las demas ofertas!</button></p></a>
+<a href="#"><p class="text-center"><button class="btn btn-success btn-lg"> ¡Ver más demas ofertas!</button></p></a>
 </div>
 </div>
 
@@ -203,17 +194,34 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
        <img src="http://i.imgur.com/0JvYB4B.png" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
      </a>
    </div>
+   <div class="row">
+     <div class="col-md-4">
+       <a href="http://i.imgur.com/0JvYB4B.png" class="thumbnail">
+         <img src="http://i.imgur.com/0JvYB4B.png" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+       </a>
+     </div>
+     <div class="col-md-4">
+       <a href="http://i.imgur.com/0JvYB4B.png" class="thumbnail">
+         <img src="http://i.imgur.com/0JvYB4B.png" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+       </a>
+     </div>
+     <div class="col-md-4">
+       <a href="http://i.imgur.com/0JvYB4B.png" class="thumbnail">
+         <img src="http://i.imgur.com/0JvYB4B.png" alt="Imagen editada por Mariana Arquieta" style="width:150px;height:150px">
+       </a>
+     </div>
+
 
 </div>
 </div>
 
-<div>
-  <h1>
-    Agregar mini menu de opciones donde habra cosas como: ¿Quienes somos?, mision, vision, etc.  </h1>
-    <p>.
+
+<!-- Begin Repuso widget code -->
+<h1> Opiniones de nuestros clientes </h1>
+<div data-repuso-grid="1150"></div>
+<script type="text/javascript" src="https://repuso.com/widgets/grid.js" async></script>
+<!-- End Repuso widget code -->
 </div>
-
-
 
 <footer>
    <!--Informacion de la parte inferior -->
@@ -226,11 +234,12 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
                 <li><a href="#" id="link_facebook" class="tooltip_trigger" title="facebook" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/facebook.jpg' alt=''  />	</a></li>
 				        <li><a href="#" id="link_google" class="tooltip_trigger" title="google" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/google.jpg' alt=''  />       </a></li>
               	<li><a href="#" id="link_twitter" class="tooltip_trigger" title="twitter" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/twitter.jpg' alt=''  />  	</a></li>
-						   	<li><a href="#" id="link_youtube" class="tooltip_trigger" title="youtube" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/youtube.jpg' alt=''  />		</a></li>
+						   	<li><a href="https://www.youtube.com/watch?v=pD_imYhNoQ4" id="link_youtube" class="tooltip_trigger" title="youtube" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/youtube.jpg' alt=''  />		</a></li>
                <li><a href="">Todos los derechos reservados</a></li>
               </ul>
 						</div>
 			</footer>
+
 
 <!-- script del boton para subir arriba -->
 <div id='IrArriba'>
@@ -262,5 +271,5 @@ return false;
 //]]>
 </script>
 </body>
-</html>
 <!-- Creditos a W3shools y a Falcon Masters por haberme enseñado todo lo aplicado en este proyecto -->
+</html>
