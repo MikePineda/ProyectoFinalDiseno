@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
@@ -52,16 +54,95 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
       width: 100%;
       margin: auto;
   }
-/*Logos redes sociales*/
-.redes {
-  width: 100px;
+
+
+/*Redes sociales en moviles*/
+.social {
+    position: relative;
+    height: 3em;
+    width: 13.5em;
+    margin: 50px 255px;
 }
 
-img {
-  display: block;
-  width: 100% !important;
-  height: auto !important;
+.social li {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    margin: -2.2em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    width: 4em;
+
 }
+
+.social a {
+    color: #fffdf0;
+    display: block;
+    height: 4em;
+    line-height: 6em;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 4em;
+
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(45deg);
+    -moz-transform: scale(1.3,1.3) rotate(45deg);
+  -ms-transform: scale(1.3,1.3) rotate(45deg);
+    -o-transform: scale(1.3,1.3) rotate(45deg);
+  transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook {
+    background: #155b9d;
+    left: 0;
+    top: 0%;
+}
+
+.twitter {
+    background: #1a9ec4;
+    bottom: 0;
+    left: 25%;
+}
+.facebook2 {
+    background: #155b9d;
+    left: 50%;
+    top: 0%;
+}
+
+.twitter2 {
+    background: #1a9ec4;
+    bottom: 0;
+    left: 25%;
+}
+
+.youtube {
+    background: #e11a30;
+    left: 50%;
+    top: 0%;
+}
+.behance {
+    background: #3f7aa3;
+    bottom: 0;
+    left: 75%;
+}
+.fa-3x { font-size: 3em; vertical-align: text-bottom; }
+
   </style>
 </head>
 
@@ -79,7 +160,7 @@ img {
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-                    <img src="http://placehold.it/150x50&text=Logo" alt=""> <!--150*50 px -->
+                    <img src="http://placehold.it/200x50&text=Logo" alt=""> <!--150*50 px -->
                     </a>
     </div>
 
@@ -94,8 +175,6 @@ img {
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
          <li> <a href="adoptame.html"><span class="glyphicon glyphicon-heart"></span> Adopta </a></li>
-
-
      <li> <a href="contacto.html">Apoyanos </a></li>
                 <li> <a href="contacto.html">Contactanos </a></li>
 
@@ -109,6 +188,7 @@ img {
 
 
 <!-- Carousel con lo mas vendido! -->
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -133,24 +213,24 @@ img {
       <div class="item">
         <img src="http://adoptamonterrey.org/images/banner_3.png" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
-          <h3>0</h3>
-          <p>Everyone mains Fox</p>
+          <h3>2</h3>
+          <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
 
       <div class="item">
         <img src="http://adoptamonterrey.org/images/banner_3.png" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
-          <h3>X</h3>
-          <p>Final Destination, No items, Fox Only</p>
+          <h3>3</h3>
+          <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
 
       <div class="item">
         <img src="http://adoptamonterrey.org/images/banner_3.png" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
-          <h3>X</h3>
-          <p>Falcon is not viable anymore</p>
+          <h3>4</h3>
+          <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
 
@@ -170,12 +250,20 @@ img {
 
 
   <div class="jumbotron">
-  <h1 class="text-center"> Adopta a un animal sin hogar</h1>
-  <p class="text-center"> La adopción es un acto significativo que representa la buena voluntad
-de las personas y el respeto a la vida</p>
-  <p>
-  <a href="adoptame.html"><p class="text-center"><button class="btn btn-primary btn-lg">¡Adopta ya!</button></p></a>
-  </div>
+  <h1 class="text-center"> Dale la oportunidad de tener un hogar</h1>
+
+    <span class="hidden-xs "><img  src="http://www.esdeperros.com/wp-content/uploads/2010/12/Adoptar-Perro.jpg"></span>
+
+
+
+
+
+      <p>
+      <a href="adoptame.html"><p class="text-center"><button class="btn btn-primary btn-lg">Conócelos</button></p></a>
+
+
+    </div>
+
 
 
 
@@ -191,41 +279,24 @@ de las personas y el respeto a la vida</p>
     <h2>Participa/Apoya</h2>
     <div class="row">
     <div class="col-lg-6">
-      <p align="left"> Puedes apoyarnos de diferentes maneras:
+      <p align="left"><h3>Puedes apoyarnos de diferentes maneras:</h3>
       <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#"> Como voluntario</a>
     <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#">Hogar temporal</a>
     <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#">Donativos a la organización</a>
     <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#"> Diferentes productos </a>
 </div>
 <div class="col-lg-6">
-  <a href="#"><img width="400" height="400" src="http://cdn.cuantafauna.com/cfs/2014/11/CF_65687_una_de_esas_historias_tiernas_entre_perro_abandonado_y_hombre_rescatador_en_imagenes.jpg" class="img-responsive" alt="Imagen editada por Mariana Arquieta"></a>
-
+  <span class="hidden-xs "><img  src="http://a401.idata.over-blog.com/5/28/45/73/perros-en-adopcion.jpeg" class="img-responsive" alt="Imagen editada por Mariana Arquieta"></span>
+<br>
     </div>
   </div>
     </div>
 
 
-  <div class="col-lg-6">
-    <h2>Siguenos en nuestras redes sociales</h2>
-    <div class="row">
-    <div class="col-lg-4">
-    <div class="redes">
-   <a href="#"><img width="400" height="400" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" class="img-responsive" alt="Imagen editada por Mariana Arquieta"></a>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="redes">
-<a href="#"><img width="400" height="400" src="http://vignette4.wikia.nocookie.net/simpsons/images/1/11/Twitter_bird_icon.png/revision/latest?cb=20111228065136" class="img-responsive" alt="Imagen editada por Mariana Arquieta"></a>
-</div>
-    </div>
-    <div class="col-lg-4">
-    <div class="redes">
-  <a href="#">  <img width="400" height="400" src="http://vignette1.wikia.nocookie.net/edsheeran/images/5/59/Youtube_icon.png/revision/latest?cb=20130619060103" class="img-responsive" alt="Imagen editada por Mariana Arquieta"></a>
-    </div>
-        </div>
-
-</div>
-<br>
+  <div class="col-md-6">
+<h2>¿Quienes somos?</h2>
+<p style="font-size:140%;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<a class="btn btn-lg btn-link btn-block" href="#">Léer más aquí</a>
 <br>
   <p><h3>¡Recibe correos nuestros y estaté al pendiente de lo que hacemos registrándote con nosotros!</h3></p>
   <p> <a class="btn btn-lg btn-primary btn-block" href="#">Registrarme</a>
@@ -234,11 +305,17 @@ de las personas y el respeto a la vida</p>
 </div> <!-- div container -->
 
 
-
 <footer>
 <!--Informacion de la parte inferior para celulares ya que la nav bar inferior desaparece-->
 <span class="visible-xs ">
-  <div style:"background color: black";>
+<div STYLE="background-color:white">
+    <h2 align="center">Siguenos en nuestras redes sociales</h2>
+  <p align="center"><ul class="social">
+   <li class="facebook"><a href="http://facebook.com/alterowo"><i class="fa fa-facebook fa-3x"></i></a></li>
+   <li class="twitter"><a href="http://twitter.com/Kyokushinowa"><i class="fa fa-twitter fa-3x"></i></a></li>
+   <li class="youtube"><a href="http://www.pinterest.com/beatagibalska/"><i class="fa fa-youtube fa-3x"></i></a></li>
+   <li class="behance"><a href="https://www.behance.net/Kurnikowa"><i class="fa fa-behance fa-3x"></i></a></li>
+ </ul>
   <p align="left">&copy; Empresa
   <p align="left">Todos los derechos reservados
 </div>
@@ -251,6 +328,11 @@ de las personas y el respeto a la vida</p>
 								<li><a href="mailto:nombreempresa@gmail.com">Mandanos un correo</a></li>
 								<li><a href="">Tel: 00-00-00-00</a></li>
                 <li><a href="contacto.html">Ubicación: Monterrey, Nuevo Leon, Av. Gonzalitos</a></li>
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="">Asociación sin fines de lucro</a></li>
               </ul>
 						</div>
