@@ -17,71 +17,70 @@
 
 <body STYLE="background-color:white">
 <header>
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <!-- El logotipo y el icono que despliega el menú se agrupan
-       para mostrarlos mejor en los dispositivos móviles -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target="#navegacion-TM">
-      <span class="sr-only">Desplegar navegación</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Nombre Empresa</a>
-  </div>
 
-  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-       otro elemento que se pueda ocultar al minimizar la barra -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse" id="navegacion-TM">
-  <div class="container-fluid">
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+         para mostrarlos mejor en los dispositivos móviles -->
     <div class="navbar-header">
-
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Desplegar navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logotipo</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li > <a href="perros.html">Perros</a></li>
-              <li > <a href="gatos.html">Gatos </a></li>
-              <li class="active"> <a href="peces.html"> Peces</a></li>
-              <li> <a href="roedores.html">Roedores </a></li>
-              <li> <a href="aves.html">Aves</a></li>
-              <li> <a href="servicios.html"> Servicios</a></li>
-              <li> <a href="opinion.html"> Danos tu opinión</a></li>
-              <li> <a href="promociones.html">Promociones </a></li>
-              <li> <a href="contacto.html">Contactanos </a></li>
 
-    </ul>
-	<!--<form class="navbar-form navbar-right" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Buscar">
-      </div>
-      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></button>
-    </form>
-  </div> -->
-</nav>
-</header>
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+         otro elemento que se pueda ocultar al minimizar la barra -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Enlace #1</a></li>
+        <li><a href="#">Enlace #2</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Menú #1 <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Acción #1</a></li>
+            <li><a href="#">Acción #2</a></li>
+            <li><a href="#">Acción #3</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Acción #4</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Acción #5</a></li>
+          </ul>
+        </li>
+      </ul>
 
-<div class="jumbotron" STYLE="background-color:white">
-<h1 class="text-center"> Seccion de peces!</h1>
-<p class="text-center">aun en  proceso....</p>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar">
+        </div>
+        <button type="submit" class="btn btn-default">Enviar</button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Enlace #3</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Menú #2 <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Acción #1</a></li>
+            <li><a href="#">Acción #2</a></li>
+            <li><a href="#">Acción #3</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Acción #4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
-<footer>
-<p> <!--Informacion de la parte inferior -->
-						<div class="navbar-inverse navbar-collapse collapse" id="footer-body">
-							<ul class="nav navbar-nav" style="list-style-type: none;">
-								<li><a href="">&copy; Empresa</a></li>
-								<li><a href="mailto:nombreempresa@gmail.com">Mandanos un correo</a></li>
-								<li><a href="">Tel: 00-00-00-00</a></li>
-                <li><a href="">Sucursal: Monterrey, Nuevo Leon, Av. Gonzalitos</a></li>
-                <li><a href="#" id="link_facebook" class="tooltip_trigger" title="facebook" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/facebook.jpg' alt=''  />	</a></li>
-				        <li><a href="#" id="link_google" class="tooltip_trigger" title="google" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/google.jpg' alt=''  />       </a></li>
-              	<li><a href="#" id="link_twitter" class="tooltip_trigger" title="twitter" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/twitter.jpg' alt=''  />  	</a></li>
-						   	<li><a href="#" id="link_youtube" class="tooltip_trigger" title="youtube" target="_blank"><img src='http://lajungladetimo.com/wp-content/themes/etheme/assets/images/icons/youtube.jpg' alt=''  />		</a></li>
-               <li><a href="">Todos los derechos reservados</a></li>
-              </ul>
-						</div>
-			</footer>
 </body>
 </html>
 <!-- Creditos a W3shools y a Falcon Masters por haberme enseñado todo lo aplicado en este proyecto -->
