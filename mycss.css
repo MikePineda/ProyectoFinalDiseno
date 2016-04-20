@@ -29,10 +29,29 @@ min-height:500px;
     border-bottom-width: 20px;
  }
 
+ #estilo4v2{
+    background-color: #FED966;
+    border-style: solid; border-width: 4px;
+    border-color: white;
+      border-right-width: 15px;
+        border-left-width: 15px;
+    min-height:200px;
+    border-bottom-width: 20px;
+ }
+
+
+
  #estilobotonesadopta{
    min-height:300px;
  }
 
+ #estilo2contacto{
+    background-color: #FFE699;
+    border-style: solid; border-width: 4px;
+    border-color: white;
+    border-right-width: 15px;
+    min-height:500px;
+ }
 /* Boton para ir arriba */
   #IrArriba {
 position: fixed;
