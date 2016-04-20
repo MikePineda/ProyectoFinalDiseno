@@ -1,0 +1,187 @@
+/*Color, bordes y ajustes  de los divs especiales*/
+#estilo1 {
+  background-color: #FED966;
+   border-style: solid; border-width: 4px;
+     border-color: white;
+     border-left-width: 15px;
+min-height:500px;
+}
+ #estilo2{
+    background-color: #FFE699;
+    border-style: solid; border-width: 4px;
+    border-color: white;
+    min-height:500px;
+ }
+ #estilo3 {
+   background-color: #FED966;
+    border-style: solid; border-width: 4px;
+      border-color: white;
+      border-right-width: 15px;
+      min-height:500px;
+ }
+ #estilo4{
+    background-color: #FFE699;
+    border-style: solid; border-width: 4px;
+    border-color: white;
+      border-right-width: 15px;
+        border-left-width: 15px;
+    min-height:200px;
+    border-bottom-width: 20px;
+ }
+
+ #estilobotonesadopta{
+   min-height:300px;
+ }
+
+/* Boton para ir arriba */
+  #IrArriba {
+position: fixed;
+bottom: 30px; /* Distancia desde abajo */
+right: 30px; /* Distancia desde la derecha */
+}
+
+#IrArriba span {
+width: 60px; /* Ancho del botón */
+height: 60px; /* Alto del botón */
+display: block;
+background: url(imagenes/perroapuntando.png) no-repeat center center;
+}
+/*Carousel */
+div      { text-align: center; }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*Redes sociales en moviles*/
+.social {
+  position: relative;
+  height: 3em;
+  width: 13.5em;
+  margin: 50px 150px;
+}
+
+.social li {
+  display: block;
+  height: 4em;
+  line-height: 4em;
+  margin: -2.2em;
+  position: absolute;
+  -webkit-transition: -webkit-transform .7s;
+  -moz-transition: -moz-transform .7s;
+  -ms-transition: -ms-transform .7s;
+  -o-transition: -o-transform .7s;
+  transition: transform .7s;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  text-align: center;
+  width: 4em;
+
+}
+
+.social a {
+  color: #fffdf0;
+  display: block;
+  height: 4em;
+  line-height: 6em;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 4em;
+
+}
+
+.social li:hover {
+-webkit-transform: scale(1.3,1.3) rotate(45deg);
+  -moz-transform: scale(1.3,1.3) rotate(45deg);
+-ms-transform: scale(1.3,1.3) rotate(45deg);
+  -o-transform: scale(1.3,1.3) rotate(45deg);
+transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook {
+  background: #155b9d;
+  left: 0;
+  top: 0%;
+}
+
+.twitter {
+  background: #1a9ec4;
+  bottom: 0;
+  left: 25%;
+}
+.facebook2 {
+  background: #155b9d;
+  left: 50%;
+  top: 0%;
+}
+
+.twitter2 {
+  background: #1a9ec4;
+  bottom: 0;
+  left: 25%;
+}
+
+.youtube {
+  background: #e11a30;
+  left: 50%;
+  top: 0%;
+}
+.behance {
+  background: #3f7aa3;
+  bottom: 0;
+  left: 75%;
+}
+.fa-3x { font-size: 3em; vertical-align: text-bottom; }
+
+/*Botón negro (inverse) (: */
+.btn-inverse {
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #363636;
+*background-color: #222222;
+background-image: -moz-linear-gradient(top, #444444, #222222);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+background-image: -webkit-linear-gradient(top, #444444, #222222);
+background-image: -o-linear-gradient(top, #444444, #222222);
+background-image: linear-gradient(to bottom, #444444, #222222);
+background-repeat: repeat-x;
+border-color: #222222 #222222 #000000;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+color: #ffffff;
+background-color: #222222;
+*background-color: #151515;
+-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+           box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-inverse:active,
+.btn-inverse.active {
+background-color: #080808 \9;
+}
+
+.btn-inverse.active {
+color: rgba(255, 255, 255, 0.75);
+}

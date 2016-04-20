@@ -9,118 +9,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
-/* Boton para ir arriba */
-    #IrArriba {
-position: fixed;
-bottom: 30px; /* Distancia desde abajo */
-right: 30px; /* Distancia desde la derecha */
-}
-
-#IrArriba span {
-width: 60px; /* Ancho del botón */
-height: 60px; /* Alto del botón */
-display: block;
-background: url(imagenes/perroapuntando.png) no-repeat center center;
-}
-/*Carousel */
-  div      { text-align: center; }
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-  }
-
-
-/*Redes sociales en moviles*/
-.social {
-    position: relative;
-    height: 3em;
-    width: 13.5em;
-    margin: 50px 150px;
-}
-
-.social li {
-    display: block;
-    height: 4em;
-    line-height: 4em;
-    margin: -2.2em;
-    position: absolute;
-    -webkit-transition: -webkit-transform .7s;
-    -moz-transition: -moz-transform .7s;
-    -ms-transition: -ms-transform .7s;
-    -o-transition: -o-transform .7s;
-    transition: transform .7s;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    text-align: center;
-    width: 4em;
-
-}
-
-.social a {
-    color: #fffdf0;
-    display: block;
-    height: 4em;
-    line-height: 6em;
-    text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 4em;
-
-}
-
-.social li:hover {
-  -webkit-transform: scale(1.3,1.3) rotate(45deg);
-    -moz-transform: scale(1.3,1.3) rotate(45deg);
-  -ms-transform: scale(1.3,1.3) rotate(45deg);
-    -o-transform: scale(1.3,1.3) rotate(45deg);
-  transform: scale(1.3,1.3) rotate(45deg);
-}
-
-.facebook {
-    background: #155b9d;
-    left: 0;
-    top: 0%;
-}
-
-.twitter {
-    background: #1a9ec4;
-    bottom: 0;
-    left: 25%;
-}
-.facebook2 {
-    background: #155b9d;
-    left: 50%;
-    top: 0%;
-}
-
-.twitter2 {
-    background: #1a9ec4;
-    bottom: 0;
-    left: 25%;
-}
-
-.youtube {
-    background: #e11a30;
-    left: 50%;
-    top: 0%;
-}
-.behance {
-    background: #3f7aa3;
-    bottom: 0;
-    left: 75%;
-}
-.fa-3x { font-size: 3em; vertical-align: text-bottom; }
-
-  </style>
+  <!--CSS de la página -->
+  <link href="mycss.css" rel="stylesheet" type="text/css">
 </head>
 
 <body STYLE="background-color:"white">
@@ -149,12 +39,11 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
       </div>
       <!-- Menú principal -->
       <ul class="nav navbar-nav navbar-center">
-        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
          <li> <a href="adoptame.html"><span class="glyphicon glyphicon-heart"></span> Adopta </a></li>
-     <li> <a href="contacto.html">Apoyanos </a></li>
+         <li> <a href="apoya.html">Apoyanos </a></li>
                 <li> <a href="contacto.html">Contactanos </a></li>
-
-                  <li> <a href="contacto.html"><span class="glyphicon glyphicon-user"></span> Inicia sesión/Registrate </a></li>
+                <li> <a href="#"><span class="glyphicon glyphicon-user"></span> Inicia sesión/Registrate </a></li>
       </ul>
 
     </div>
@@ -178,7 +67,7 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="slide1.jpg" alt="Chania" width="460" height="345">
+        <img src="http://alimentosdemascotas.com.uy/wp-content/uploads/2015/07/slider03.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
 
             <a href="introducciontecladozurdo.html"><p class="text-center"><button class="btn btn-primary btn-lg">Adoptame</button></p></a>
@@ -187,7 +76,7 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
       </div>
 
       <div class="item">
-        <img src="slide1.jpg" alt="Chania" width="460" height="345">
+        <img src="http://alimentosdemascotas.com.uy/wp-content/uploads/2015/07/slider03.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>2</h3>
           <p>Lorem ipsum dolor sit amet</p>
@@ -195,7 +84,7 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
       </div>
 
       <div class="item">
-        <img src="slide1.jpg" alt="Flower" width="460" height="345">
+        <img src="http://alimentosdemascotas.com.uy/wp-content/uploads/2015/07/slider03.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>3</h3>
           <p>Lorem ipsum dolor sit amet</p>
@@ -203,7 +92,7 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
       </div>
 
       <div class="item">
-        <img src="slide1.jpg" alt="Flower" width="460" height="345">
+        <img src="http://alimentosdemascotas.com.uy/wp-content/uploads/2015/07/slider03.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>4</h3>
           <p>Lorem ipsum dolor sit amet</p>
@@ -229,7 +118,7 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
 <div class="container">
 <div class="row">
 
-<div class="col-lg-4">
+<div class="col-lg-4"  id="estilo1">
     <h2>¿Quienes somos?</h2>
     <p style="font-size:140%;"> <FONT FACE="small fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -239,17 +128,25 @@ background: url(imagenes/perroapuntando.png) no-repeat center center;
 
     <br>
 </div>
-  <div class="col-md-4">
+  <div class="col-md-4" id="estilo2">
 <h2>Test</h2>
-Lorem ipsum dolor sit amet
+<p style="font-size:140%;"> <FONT FACE="small fonts">Lorem ipsum dolor sit amet
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="https://h3rr1k0gameplay.files.wordpress.com/2014/02/cachorros-de-perro.png" width="370" height="200">
+<a class="btn btn-inverse btn-lg" href="#"> Toma el Test</a>
 </div>
-<div class="col-md-4">
+<div class="col-md-4" id="estilo3">
 <h2>Participa/Apoya</h2>
 <p align="left"><h3>Puedes apoyarnos de diferentes maneras:</h3>
 <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#"> Como voluntario</a>
 <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#">Hogar temporal</a>
 <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#">Donativos a la organización</a>
 <p align="left"><a class="btn btn-lg btn-danger btn-block" href="#"> Diferentes productos </a>
+  <br>
 </div>
 </div> <!-- div del row principal -->
 </div> <!-- div container -->
@@ -258,28 +155,31 @@ Lorem ipsum dolor sit amet
 
 
 <!-- Botones de adopta perros/gatos -->
-<div class="container">
+<div class="container" id="estilobotonesadopta">
 <div class="row">
 <div class="col-lg-6">
-  <br>
-  <br>
-    <p align="right"><a class="btn btn-primary btn-lg" href="#"> Adopta un perro</a>
-    <br>
-    <br>
+  <div STYLE="position:absolute; top:36px; left:250px; visibility:visible z-index:1">
+<p align="right"><img src="http://1.bp.blogspot.com/-vgRiOcvbpkY/UnAzvz6B9oI/AAAAAAAAAGQ/3DprfByL-LU/s1600/gato1.png" alt="Gato" width="200" height="200">
+</div>
+<div STYLE="position:absolute; top:190px; left:270px; visibility:visible z-index:1">
+  <p align="right"><a class="btn btn-inverse btn-lg" href="#"> Adopta un perro</a>
+</div>
 </div>
 <div class="col-md-6">
-<br>
-<br>
-<p align="left"><a class="btn btn-primary btn-lg" href="#"> Adopta un gato</a>
-  <br>
-  <br>
+  <div STYLE="position:absolute; top:36px; left:80px; visibility:visible z-index:1">
+  <p align="left"><img src="https://animalhadas.files.wordpress.com/2015/05/gatos-y-perros-png-15.png?w=200&h=200&crop=1" alt="Gato" width="200" height="200">
+  </div>
+  <div STYLE="position:absolute; top:190px; left:100px; visibility:visible z-index:1">
+  <p align="left"><a class="btn btn-inverse btn-lg" href="#"> Adopta un perro</a>
+  </div>
 </div>
 </div> <!-- div del row principal -->
 </div> <!-- div container -->
 
 <!-- Invitacion a usuarios a dar perros si no pueden mantenerlos -->
-<div class="container">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+<div class="container" id="estilo4">
+  <h2>¿Lorem ipsum dolor sit amet?</h2>
+<p style="font-size:140%;"> <FONT FACE="small fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 
 <footer>
