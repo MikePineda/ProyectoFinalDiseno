@@ -1,4 +1,11 @@
 /*Color, bordes y ajustes  de los divs especiales*/
+p {
+    font-size: 140%;
+}
+p.apoyarnos{
+  font-size: 30px;
+}
+
 #estilo1 {
   background-color: #FED966;
    border-style: solid; border-width: 4px;
