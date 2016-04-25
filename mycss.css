@@ -42,7 +42,7 @@ min-height:500px;
     border-color: white;
       border-right-width: 15px;
         border-left-width: 15px;
-    min-height:200px;
+    min-height:500px;
     border-bottom-width: 20px;
  }
 
@@ -77,6 +77,7 @@ min-height:500px;
     border-right-width: 15px;
     min-height:500px;
  }
+
 /* Boton para ir arriba */
   #IrArriba {
 position: fixed;
