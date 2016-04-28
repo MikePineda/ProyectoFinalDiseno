@@ -5,10 +5,10 @@ p {
 p.apoyarnos{
   font-size: 30px;
 }
-
+/*Ajustes de color de los diferentes divs, asi como los bordes debido a que se pasaban un poco*/
 #estilo1 {
   background-color: #FED966;
-   border-style: solid; border-width: 4px;
+    border-style: solid; border-width: 4px;
      border-color: white;
      border-left-width: 15px;
 min-height:500px;
@@ -88,6 +88,21 @@ min-height:500px;
   background: black;
   color: white;
 }
+
+/*Letra mas grande en la nav bar y ajustes */
+header{
+clear: both;
+width: 100%;
+text-align: center;
+margin: 0;
+font-size: 18px;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+
+  }
+
 /*Parte inferior de la pagina, letra grande para que sea mas visible*/
 footer{
 clear: both;
@@ -115,7 +130,7 @@ div      { text-align: center; }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 100%;
-    margin: auto;
+   margin: auto;
 }
 .carousel .item {
     border-radius: 5px;
