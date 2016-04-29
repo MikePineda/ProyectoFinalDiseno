@@ -1,4 +1,7 @@
 /*Color, bordes y ajustes  de los divs especiales*/
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
 p {
     font-size: 140%;
 }
@@ -109,7 +112,7 @@ clear: both;
 width: 100%;
 text-align: center;
 margin: 0;
-font-size: 18px;
+font-size: 19px;
 }
 /* Boton para ir arriba */
   #IrArriba {
