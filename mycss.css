@@ -8,6 +8,13 @@ p {
 p.apoyarnos{
   font-size: 30px;
 }
+
+div.wrapper {
+    width:1140px;
+    max-width: 1140px;
+    margin: auto;
+}
+
 /*Ajustes de color de los diferentes divs, asi como los bordes debido a que se pasaban un poco*/
 #estilo1 {
   background-color: #FED966;
@@ -16,6 +23,13 @@ p.apoyarnos{
      border-left-width: 15px;
 min-height:500px;
 
+}
+#estilo2test-sm{
+  background-color: #FFE699;
+  border-style: solid; border-width: 4px;
+  border-color: white;
+  border-right-width: 15px;
+  min-height:500px;
 }
  #estilo2{
     background-color: #FFE699;
@@ -29,6 +43,24 @@ min-height:500px;
       border-color: white;
       border-right-width: 15px;
       min-height:500px;
+ }
+ #estilo3-participa-sm{
+   background-color: #FED966;
+    border-style: solid; border-width: 4px;
+      border-color: white;
+      border-right-width: 15px;
+      border-left-width: 15px;
+      min-height:400px;
+ }
+#colorfuerte{
+  background-color: #FED966;
+    min-height:200px;
+    border-bottom-width: 20px;
+}
+ #colorclaro{
+  background-color: #FFE699;
+    min-height:180px;
+    border-bottom-width: 20px;
  }
  #estilo4{
     background-color: #FFE699;
@@ -74,12 +106,34 @@ min-height:500px;
    min-height:300px;
  }
 
+ #estilo1dona{
+   background-color: #FED966;
+     border-style: solid; border-width: 4px;
+      border-color: white;
+      border-left-width: 15px;
+ min-height:590px;
+ }
+#estilo1contacto{
+    background-color: #FED966;
+      border-style: solid; border-width: 4px;
+       border-color: white;
+       border-left-width: 15px;
+  min-height:555px;
+}
+
+#estilo2noticias{
+  background-color: #FFE699;
+  border-style: solid; border-width: 4px;
+  border-color: white;
+  border-right-width: 15px;
+  min-height:590px;
+}
  #estilo2contacto{
     background-color: #FFE699;
     border-style: solid; border-width: 4px;
     border-color: white;
     border-right-width: 15px;
-    min-height:500px;
+    min-height:555px;
  }
  /*Pagination  en forma circular en adopta*/
  .pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
