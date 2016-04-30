@@ -5,6 +5,10 @@ body {
 p {
     font-size: 140%;
 }
+
+#donacion{
+  font-size: 100S%;
+}
 p.apoyarnos{
   font-size: 30px;
 }
@@ -145,6 +149,7 @@ min-height:500px;
   background: black;
   color: white;
 }
+
 
 /*Letra mas grande en la nav bar y ajustes */
 header{
