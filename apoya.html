@@ -46,7 +46,7 @@
     Apóyanos </a></li>
                     <li> <a href="contacto.html"><i class="fa fa-compass" aria-hidden="true"></i>
     Contáctanos </a></li>
-                    <li> <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesión/Regístrate </a></li>
+                    <li> <a data-toggle="modal" data-target="#login"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesión/Regístrate </a></li>
           </ul>
          </div>
         </div>
@@ -89,7 +89,7 @@
 Apóyanos </a></li>
          <li class="pull-left"> <a href="contacto.html"><i class="fa fa-compass" aria-hidden="true"></i>
 Contáctanos </a></li>
-         <li class="pull-right"> <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesión<span class="hidden-sm ">/Regístrate</span> </a></li>
+         <li class="pull-right"> <a data-toggle="modal" data-target="#login"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesión<span class="hidden-sm ">/Regístrate</span> </a></li>
       </ul>
 
     </div>
@@ -97,7 +97,48 @@ Contáctanos </a></li>
   </nav>
 </div>
 </div> <!--  fin visible solo en las compus (sin zoom) -->
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p align="center">	<img class="img-responsive" id="img_logo" src="imagenes/logo2.png"></p>
+          </button>
+        </div>
+
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                    <div class="modal-body">
+                <div id="div-login-msg">
+                              <p align="left">  <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Teclea tu usuario y contraseña.</span>
+                            </div>
+                <input id="login_username" class="form-control" type="text" placeholder="Usuario">
+                <input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Recuérdame
+                                </label>
+                            </div>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-inverse btn-lg btn-block">Iniciar sesión</button>
+                            </div>
+                  <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu contraseña?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Registrarme</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End # Login Form -->
+
   </header>
+
 
 <!-- contenido visible en todo menos cel debido a problemas de visibilidads-->
 <span class="hidden-xs hidden-sm">
@@ -240,7 +281,7 @@ Contáctanos </a></li>
   <div class="col-lg-7" id="estilo4v2">
   <h2>Donaciones</h2>
   <form class="form-horizontal" role="form">
-  
+
   <!-- Nombre-->
   <div class="form-group">
   <label class="control-label col-sm-2" for="textinput">Nombre Completo</label>
